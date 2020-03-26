@@ -25,7 +25,7 @@
 
 .header-text{
     max-width: 350px;
-    margin-top: 50px;
+    margin-top: 20px;
 }
 
 .header-text p{
@@ -96,7 +96,7 @@ p{
     right: -250px;
     top: 0;
     background: #f67c92;
-    z-index: 2;
+    z-index: 3;
     transition: all 0.2s ease;
 }
 
@@ -115,7 +115,7 @@ nav ul li a{
     position: fixed;
     right: 65px;
     top: 35px;
-    z-index: 2;
+    z-index: 3;
     cursor: pointer;
 }
 
@@ -124,7 +124,7 @@ nav ul li a{
 
 /*------------------About_Section----------------------*/
 
-#about,#offer{
+#about, #offer, #course-details{
     padding: 100px 0;
     display: flex;
     align-items: center;
@@ -163,7 +163,60 @@ nav ul li a{
     color: #797979;
 }
 
+#more{
+    display: none;
+}
+
+#myBtn{
+    padding: 10px 10px;
+    background: #f67c92;
+    outline: none;
+    cursor: pointer;
+    border-radius: 10px;
+    border: 1.5px solid black;
+    margin: 10px 0;
+}
+
 /*----------x-------About_Section-----------x----------*/
+
+
+/*------------------Visionaries_Section----------------------*/
+
+.carousel {
+  background-color: beige;
+  z-index: 2;
+  border-radius: 20px; 
+}
+
+.visionaries-h1{
+    width: 100%;
+    margin-bottom: 2.5rem;
+    text-align: center
+}
+
+.carousel-cell {
+  margin-right: 20px;
+  overflow: hidden;
+  border-radius: 20px;
+}
+
+.carousel.is-fullscreen .carousel-cell img{
+  height: 100%;
+}
+
+.carousel-cell img {
+  display: block;
+  height: 200px;
+  border-radius: 20px;
+}
+
+@media screen and ( min-width: 768px ) {
+  .carousel-cell img {
+    height: 400px;
+  }
+}
+
+/*----------x-------Visionaries_Section-----------x----------*/
 
 
 /*------------------Features_Section----------------------*/
@@ -171,6 +224,13 @@ nav ul li a{
 #features{
     padding-top: 50px;
     padding-bottom: 50px;
+}
+
+.features-h1{
+    width: 100%;
+    text-align: center;
+    margin-top: 3rem;
+    margin-bottom: 3rem;
 }
 
 .feature-row{
@@ -250,8 +310,9 @@ nav ul li a{
 }
 
 .course-text button{
-    margin: 30px 0;
+    margin: 5px 0;
 }
+
 /*----------x-------Courses_Section-----------x----------*/
 
 
@@ -267,77 +328,55 @@ nav ul li a{
 /*------------------qna_Section----------------------*/
 
 
-.wrap-collapsible{
-    margin: 0.5rem 0;
-}
-
-input[type='checkbox']{
-    display: none;
-}
-
-.lbl-toggle{
-    display: block;
-    font-weight: bold;
-    font-size: 1.2rem;
-    font-family: monospace;
-    text-align: justify;
-    padding: 1rem;
-    color: whitesmoke;
-    background: #f67c92;
+.accordian{
+    background-color: #f67c92;
+    color: #444;
+    padding: 18px;
     cursor: pointer;
-    border-radius: 7px;
-    transition: all 0.25s ease-out;
+    width: 100%;
+    text-align: left;
+    border: 2px solid #777;
+    border-radius: 10px;
+    outline: none;
+    transition: all 0.2s ease-in-out;
+    margin: 5px 0;
+    color: black;
 }
 
-.lbl-toggle:hover{
-    color: yellow;
+.accordian:after {
+    content: '\02795';
+    color: black;
+    font-size: 11px;
+    float: right;
+    margin-left: 5px;
 }
 
-.lbl-toggle::before{
-    content: ' ';
-    display: inline-block;
-    border-top: 5px solid transparent;
-    border-bottom: 5px solid transparent;
-    border-left: 5px solid currentColor;
-    vertical-align: middle;
-    margin-right: 0.7rem;
-    transform: translateY(-2px);
-    transition: transform 0.2s ease-out;
+.active:after{
+    content: "\2796";
 }
 
-.toggle:checked + .lbl-toggle::before{
-    transform: rotate(90deg) translateX(-3px);
+.hee{
+    text-align: left;
 }
 
-.collapsible-content{
-    max-height: 0px;
+.active, .accordian:hover{
+    background-color: yellow;
+}
+
+.panel{
+    padding: 0 18px;
+    background-color: papayawhip;
     overflow: hidden;
-    transition: max-height 0.25s ease-in-out;
-    background-color: aliceblue;
+    max-height: 0;
+    transition: max-height 0.6s ease;
+    border-radius: 10px;
     text-align: justify;
 }
 
-.toggle:checked + .lbl-toggle + .collapsible-content{
-    max-height: 100vh;
+.panel p{
+    color: darkcyan;
 }
 
-
-.toggle:checked + .lbl-toggle{
-    border-bottom-right-radius: 0;
-    border-bottom-left-radius: 0;
-}
-    
-.collapsible-content .content-inner{
-    background: rgba(250, 224, 66, 0.2);
-    border-bottom: 1px solid rgba(250, 224, 66, 0.45);
-    border-bottom-left-radius: 7px;
-    border-bottom-right-radius: 7px;
-    padding: 0.5rem 1rem;
-}
-
-.content-inner p{
-    font-family: sans-serif;
-}
 
 /*----------x-------qna_Section------------x----------*/
 
@@ -538,6 +577,7 @@ h1{
     
 .feature-col{
     flex-basis: 100%;
+    margin: 2rem 0;
     }    
 
 .course-left-col{
