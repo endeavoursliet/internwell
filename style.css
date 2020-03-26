@@ -282,15 +282,15 @@ input[type='checkbox']{
     font-family: monospace;
     text-align: justify;
     padding: 1rem;
-    color: #777;
-    background: #FAE042;
+    color: whitesmoke;
+    background: #777;
     cursor: pointer;
     border-radius: 7px;
     transition: all 0.25s ease-out;
 }
 
 .lbl-toggle:hover{
-    color: #7C5A0B;
+    color: yellow;
 }
 
 .lbl-toggle::before{
@@ -313,7 +313,7 @@ input[type='checkbox']{
     max-height: 0px;
     overflow: hidden;
     transition: max-height 0.25s ease-in-out;
-    background-color: blanchedalmond;
+    background-color: aliceblue;
     text-align: justify;
 }
 
