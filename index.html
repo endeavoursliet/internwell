@@ -15,10 +15,25 @@
         <link rel="stylesheet" type="text/css" href="./style.css">
         
         <!-------------x--------CustomCss--------------x----------->
+        
+        <!----------------------FlickityCss-------------------------->
+        <link rel="stylesheet" href="https://unpkg.com/flickity@2/dist/flickity.min.css">
+        
+        <link rel="stylesheet" href="https://unpkg.com/flickity-fullscreen@1/fullscreen.css">
+        <!-------------x--------FlickityCss--------------x----------->
+        
+        
+        <!----------------------Icon-------------------------->
+        <link rel="icon" href="./images/riT.png" sizes="64x64">       
+        <!-------------x--------Icon--------------x----------->
+        
         <!-------------------------SmoothScollJS------------------>
         <script src="https://cdn.jsdelivr.net/gh/cferdinandi/smooth-scroll/dist/smooth-scroll.polyfills.min.js"></script>
-        
         <!--------------x----------SmoothScollJS--------------x--->
+        
+        <!----------------------JqueryCDN-------------------------->
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+        <!-------------x--------JqueryCDN--------------x----------->
         
     </head>
     <body> 
@@ -50,9 +65,11 @@
          <ul>
              <li><a href="#header">HOME</a></li>
              <li><a href="#about">ABOUT US</a></li>
+             <li><a href="#visionaries">OUR VISIONARIES</a></li>
              <li><a href="#features">FEATURES</a></li>
              <li><a href="#courses">COURSES</a></li>
              <li><a href="#offer">OFFERS</a></li>
+             <li><a href="#course-details">COURSE DETAILS</a></li>
              <li><a href="#contact">CONTACT</a></li>
          </ul>
      </nav>
@@ -70,7 +87,9 @@
              <div class="about-text">
                  <h1>About Us</h1>
                  <span class="square"></span>
-                 <p>ABC enterprises is an SME fighting hard against it's competitors to make a stand in the market. The biggest challenge is to gain the support it needs to win. InternWell has a solution for them as it brings out it's biggest weapons, the talented interns who'll establish it's digital presence in the market using the various skills at their ease. Through digitization, the sales and popularity of ABC enterprises soars to the sky. The interns from different universities got paid, worked on a live project that they can brag about, and most importantly, developed their skillset. But wait! There’s more! The money earned through this deal would not only be utilised for the company but will be spent to develop the technical skills of underprivileged people thus increasing their employability. This is exactly how InternWell works. We take a project from SMEs, hire undergrads as interns to work on the projects, and use the money earned in three different ways. We pay the interns with some money, utilise the funds for development of the company and also use it to develop the skills of the underprivileged so as to employ them or help them get employed in some other company. Our main focus is to help potential SMEs grow their trade by making complete use of digital services available to them and help students and underprivileged people upskill hence increasing their employability</p>
+                 <p>Internships are a great way to showcase skillset to employers. They provide with experience of how the industry works & functions. Working on a live project provides a cutting edge over the competitors as it adds up as a bonus to the resume. We here at InternWell provide interns with hands-on experience on the projects that we take up from SMEs under the mentorship of experts from our team. Based on the performance, the interns might also receive some stipend. We require the interns to have some basic know-how of the desired work before applying for, as the interns will get to worl real-life projects that we obtain from an enterprises. <span id="dots">...</span><span id="more">Furthermore, we have a dedicated team of experts who mentor and guide the interns working on the live projects. Our team members make sure that the projects are carved with perfection and delivered before the deadline. We require people who have good enough skills, have minimum experience, and can dedicate enough time to the company. InternWell in its starting stages will be providing experience and a great platform to develop your skills at the ease of your home. Interested? Drop us a message and we will look into it...</span></p>
+                 
+                 <button onclick="myFunction()" id="myBtn">Read More</button>
                  <div class="line">
                    <span class="line-1"></span><br>
                    <span class="line-2"></span><br>
@@ -82,10 +101,56 @@
      
      <!------------x------------About_Section-----------x-------------->
      
+     <!-------------------------Visionaries_Section-------------------------->
+     <section id="visionaries">
+     <div class="visionaries-h1">
+     <h1>Our Visionaries</h1>
+     </div>
+        <div class="carousel">
+          <div class="carousel-cell">
+            <img src="./images/magazines/hi/1.jpg" alt="orange tree" />
+          </div>
+          <div class="carousel-cell">
+            <img src="./images/magazines/hi/2.jpg" alt="orange tree" />
+          </div>
+          <div class="carousel-cell">
+            <img src="./images/magazines/hi/7.jpg" alt="orange tree" />
+          </div>
+          <div class="carousel-cell">
+            <img src="./images/magazines/hi/3.jpg" alt="orange tree" />
+          </div>
+          <div class="carousel-cell">
+            <img src="./images/magazines/hi/11.jpg" alt="orange tree" />
+          </div>
+          <div class="carousel-cell">
+            <img src="./images/magazines/hi/6.jpg" alt="orange tree" />
+          </div>
+          <div class="carousel-cell">
+            <img src="./images/magazines/hi/10.jpg" alt="orange tree" />
+          </div>
+          <div class="carousel-cell">
+            <img src="./images/magazines/hi/5.jpg" alt="orange tree" />
+          </div>
+          <div class="carousel-cell">
+            <img src="./images/magazines/hi/8.jpg" alt="orange tree" />
+          
+          </div>
+          <div class="carousel-cell">
+            <img src="./images/magazines/hi/4.jpg" alt="orange tree" />
+          </div>
+          <div class="carousel-cell">
+            <img src="./images/magazines/hi/9.jpg" alt="orange tree" />
+          </div>          
+        </div>
+     </section>
+     <!------------x------------Visionaries_Section-----------x--------------> 
      
      <!------------x------------Features_Section-----------x-------------->
      
      <section id="features">
+        <div class="features-h1">
+         <h1>Features</h1>
+        </div>
          <div class="feature-row">
              <div class="feature-col">
              <img src="./images/pic-1.png" alt="">
@@ -123,8 +188,26 @@
              <div class=course-text><h1>Browse our Top Courses</h1>
              <span class="square">
              </span>
-             <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsa nemo praesentium nisi nam maiores ullam veritatis quos, quidem, vitae est doloribus quasi fugiat tempora. Eaque aut assumenda harum autem, voluptatum!</p>
-             <button class="common-btn">View All Courses</button>
+             <button class="accordian">Digital Marketing:</button>
+                 <div class="panel">
+                     <p>Our varied Digital Marketing services include Social Media Marketing, Content Marketing, Video Marketing and Online advertisements, etc. Through these services we will make sure that your outreach is as wide as possible.</p>
+                 </div>
+                 <button class="accordian">Web Development:</button>
+                 <div class="panel">
+                     <p>This is the area of our expertise. We have the best mentors available to make great user-friendly websites that will attract customers for your products. Through SEO optimisation we will make sure that the website is displayed amongst the top ones of searches. InternWell also makes use of latest web development technologies like React to build dynamic websites. The cost of hosting will have to be borne by you and we will connect you with the best domain offering companies in the market. Websites can be later updated and we will also make regular maintenance checks and developments at an affordable rate. We build lifelong relations with our clients instead of contracts.</p>
+                 </div>
+                 <button class="accordian">App Development:</button>
+                 <div class="panel">
+                     <p>We offer never before prices for cross platform app development for your enterprises. Apps can be used for a variety of purposes. The portability of Apps is helping enterprises track production stats and resources faster than ever. Apps offer widespread connectivity and can establish a direct bridge between the customer and the enterprise.</p>
+                 </div>
+                 <button class="accordian">Content Writing:</button>
+                 <div class="panel">
+                     <p>Content Writers are in huge demand across the nation. It is one of the fastest growing roles in the modern industry’s scenario. The need of creative content is growing each day. Little knowledge of SEO and correct usage of language along with a hint of creativity goes a long way. You can also write content for our Tech Blog. Include a request for the same in your application if you wish to write for the blog.</p>
+                 </div>
+                 <button class="accordian">Social Media Marketing: </button>
+                 <div class="panel">
+                     <p>This is yet another in demand role now-a-days. Companies pay a lot to active social media managers who can creatively manage the social media platform of the company. Social Media is the biggest weapon for a company to advertise and increase its outreach. This is a great skill to have in your resume.</p>
+                 </div>
              <div class="line">
                    <span class="line-1"></span><br>
                    <span class="line-2"></span><br>
@@ -169,54 +252,26 @@
      
      <!------------x------------QnA_Section-----------x-------------->
      
-     <section id="about">
+     <section id="course-details">
          <div class="about-left-col">
              <img src="./images/offer.png" alt="">
          </div>
          <div class="about-right-col">
              <div class="about-text">
-                 <h1>Our Working Standards,<br>Intuitive Work Culture</h1>
+                 <h1 class="hee">Our Working Standards,<br>Intuitive Work Culture</h1>
                  <span class="square"></span>
-                 <div class="wrap-collapsible">
-                     <input type="checkbox" id="collapsible" class="toggle">
-                     <label for="collapsible" class="lbl-toggle" tabindex="0" >Course Details:</label>
-                     <div class="collapsible-content">
-                        <div class="content-inner">
-                         <p>                             InternWell brings to you 18-SBC, an 18 – day online course that will help you shape your dreams into reality. The nation is currently on lockdown but don’t worry, the internet and electricity are still active. Many students wait for a time when no one will stop them from pursuing their passion. Well, now the time has come, the time has come to drift from that monotonous academic curriculum and learn something interesting, let’s not waste this time. 18-SBC is a fun filled active course dedicated towards development of the skills that you can boast about. It includes interactive sessions from Prateek Narang – Cofounder Coding blocks, Dr. Manpreet Manna – Former Director AICTE and Founder of MHRD’s Swayam App, Blessin George – Google India’s AI/ML facilitator and many more brains that will help you hone your skills. For a more detailed list, go to the “Speaker Details” section. There is a small commitment fee for this course that will be later provided to the organisations that are supporting the poor to recover from the aftermath of the CoVID-19 Pandemic.
-                         </p>
-                     </div>
-                    </div>
-                </div>
-                <div class="wrap-collapsible">
-                     <input type="checkbox" id="collapsible" class="toggle">
-                     <label for="collapsible" class="lbl-toggle" tabindex="0" >Course Outline</label>
-                     <div class="collapsible-content">
-                        <div class="content-inner">
-                         <p>The Course will be held over a time span of 18 days during the pandemic. More details about the schedule will be updated soon. The course will be conducted on “Zoom” platform. The assignments will be given through Google classroom (or) Slack. Any discussions and questions will be resolved through Whatsapp groups. There will be credits for attending the lectures of the topics you choose and you shall be eligible for a certificate and other perks if you have minimum number of required credits. The following modules are currently available in the course:
-                         </p>
-                     </div>
-                    </div>
-                </div>
-                <div class="wrap-collapsible">
-                     <input type="checkbox" id="collapsible" class="toggle">
-                     <label for="collapsible" class="lbl-toggle" tabindex="0" >Why 18-SBC?</label>
-                     <div class="collapsible-content">
-                        <div class="content-inner">
-                         <p>India’s 21 day lockdown might sound boring but hey, Newton invented Calculus and made ground-breaking discoveries during the The Great Plague. There will come a time when everyone will get back to their usual lives and we will continue with our boring monotonous routines. But, it would be great having upskilled during this pandemic so you can worry less about your skills and focus more on academics. Also you will be able to target upcoming competitions and will be able to work on projects once everything is back in place. You will finally be able possess the dual nature of an engineer – Academic excellence and a skilled competitor. You will also be able to crack internships in various top level companies by upgrading your skillset and will also be donating a little amount of to a gigantic cause.
-                         </p>
-                     </div>
-                    </div>
-                </div>
-                <div class="wrap-collapsible">
-                     <input type="checkbox" id="collapsible" class="toggle">
-                     <label for="collapsible" class="lbl-toggle" tabindex="0" >Course Mentors:</label>
-                     <div class="collapsible-content">
-                        <div class="content-inner">
-                         <p>India’s 21 day lockdown might sound boring but hey, Newton invented Calculus and made ground-breaking discoveries during the The Great Plague. There will come a time when everyone will get back to their usual lives and we will continue with our boring monotonous routines. But, it would be great having upskilled during this pandemic so you can worry less about your skills and focus more on academics. Also you will be able to target upcoming competitions and will be able to work on projects once everything is back in place. You will finally be able possess the dual nature of an engineer – Academic excellence and a skilled competitor. You will also be able to crack internships in various top level companies by upgrading your skillset and will also be donating a little amount of to a gigantic cause.
-                         </p>
-                     </div>
-                    </div>
-                </div>
+                 <button class="accordian">Course Details:</button>
+                 <div class="panel">
+                     <p>InternWell brings to you 18-SBC, an 18 – day online course that will help you shape your dreams into reality. The nation is currently on lockdown but don’t worry, the internet and electricity are still active. Many students wait for a time when no one will stop them from pursuing their passion. Well, now the time has come, the time has come to drift from that monotonous academic curriculum and learn something interesting, let’s not waste this time. 18-SBC is a fun filled active course dedicated towards development of the skills that you can boast about. It includes interactive sessions from Prateek Narang – Cofounder Coding blocks, Dr. Manpreet Manna – Former Director AICTE and Founder of MHRD’s Swayam App, Blessin George – Google India’s AI/ML facilitator and many more brains that will help you hone your skills. For a more detailed list, go to the “Speaker Details” section. There is a small commitment fee for this course that will be later provided to the organisations that are supporting the poor to recover from the aftermath of the CoVID-19 Pandemic.</p>
+                 </div>
+                 <button class="accordian">Course Outline</button>
+                 <div class="panel">
+                     <p>The Course will be held over a time span of 18 days during the pandemic. More details about the schedule will be updated soon. The course will be conducted on “Zoom” platform. The assignments will be given through Google classroom (or) Slack. Any discussions and questions will be resolved through Whatsapp groups. There will be credits for attending the lectures of the topics you choose and you shall be eligible for a certificate and other perks if you have minimum number of required credits. The following modules are currently available in the course:</p>
+                 </div>
+                 <button class="accordian">Why Impact 360?</button>
+                 <div class="panel">
+                     <p>India’s 21 day lockdown might sound boring but hey, Newton invented Calculus and made ground-breaking discoveries during the The Great Plague. There will come a time when everyone will get back to their usual lives and we will continue with our boring monotonous routines. But, it would be great having upskilled during this pandemic so you can worry less about your skills and focus more on academics. Also you will be able to target upcoming competitions and will be able to work on projects once everything is back in place. You will finally be able possess the dual nature of an engineer – Academic excellence and a skilled competitor. You will also be able to crack internships in various top level companies by upgrading your skillset and will also be donating a little amount of to a gigantic cause.</p>
+                 </div>
                  <div class="line">
                    <span class="line-1"></span><br>
                    <span class="line-2"></span><br>
@@ -234,7 +289,7 @@
      <section id="contact">
          <div class="container contact-row">
              <div class="contact-left-col">
-                 <h1>Sign Up to Join our<br>Learning Community</h1>
+                 <h1>Register to Join our<br>Empowering Community</h1>
                  <form action="https://docs.google.com/forms/u/0/d/e/1FAIpQLSfARG9p9E6GR410bf32sVuiqMX7PDL7C7ZEXaNIukF0eCMUqQ/formResponse">
                      <input type="text" placeholder="Enter Name" required name="entry.2005620554">
                      <input type="email" placeholder="Enter Email" required name="entry.1045781291">
@@ -244,8 +299,7 @@
                      <input type="text" placeholder="Enter Subject" name="entry.1507662081">
                      <input type="text" placeholder="Enter your Message" name="entry.766837749">
                      <div class="btn-box">
-                     <button class="common-btn">Sign Up</button>
-                     <button class="common-btn">Login</button>
+                     <button class="common-btn">Register</button>
                      <button class="common-btn">Upload Resume</button>
                      </div>
                  </form>
@@ -272,36 +326,42 @@
              <div class="footer-left-col">
                 <div class="footer-links">
                 <div class="link-title">
-                     <h4>Product</h4>
-                     <small>Our Plan</small><br>
-                     <small>Free Trial</small>
+                     <h4>Roles</h4>
+                     <small>SMEs</small><br>
+                     <small>Interns</small><br>
+                     <small>CSRs</small>
                  </div>
                  <div class="link-title">
                      <h4>About Us</h4>
-                     <small>Request Demo</small><br>
+                     <small>Throw Your Demands</small><br>
+                     <small>Increase Profitability</small><br>
                      <small>FAQs</small>
                  </div>
                  <div class="link-title">
                      <h4>Support</h4>
-                     <small>Features</small><br>
-                     <small>Contact Us</small>
+                     <small>Web Developers</small><br>
+                     <small>App Developers</small><br>
+                     <small>Content Writers</small><br>
+                     <small>Digital Markerters</small>
                  </div>
                  <div class="link-title">
                      <h4>Explore</h4>
-                     <small>Find a Non-Profit</small><br>
-                     <small>Corporate Solution</small>
+                     <small>Our Work</small><br>
+                     <small>Our Interns</small><br>
+                     <small>Social Responsibilities</small><br>
+                     <small>Corporate Solutions</small>
                  </div>
                  </div>
              </div>
              <div class="footer-right-col">
                  <div class="footer-info">
                      <div class="copyright-text">
-                         <small>support@gmail.com</small>
+                         <small>internwellofficial@gmail.com</small>
                          <small>Copyright &copy; 2020 InternWell</small>
                      </div>
                      <div class="footer-logo">
                          <img src="./images/riT.png" alt="">
-                         <button class="common-btn">English</button>
+                         <a href="#"><button class="common-btn">English</button></a>
                      </div>
                  </div>
              </div>
@@ -355,6 +415,86 @@
    <!--------x--------Nav Menu-----x------>
    
    
+   <!-----------------CustomPageTitle------------->
+   <script>
+    $(function() {
+        // Get page title
+        var pageTitle = $("title").text();
+
+        // Change page title on blur
+        $(window).blur(function() {
+          $("title").text("Don't forget to read this..." + pageTitle);
+        });
+
+        // Change page title back on focus
+        $(window).focus(function() {
+          $("title").text(pageTitle);
+        });
+    });
+   </script>   
+   <!--------x--------CustomPageTitle-----x------->
+   
+   
+   
+   <!----------------Read More Btn------------->
+   <script>
+        function myFunction() {
+            
+            var dots = document.getElementById("dots");
+            
+            var moreText = document.getElementById("more");
+            
+            var btnText = document.getElementById("myBtn");
+            
+            if (dots.style.display === "none") {
+                dots.style.display = "inline";
+                btnText.innerHTML = "Read more";
+                moreText.style.display = "none";
+            }
+            
+            else {
+                dots.style.display = "none";
+                btnText.innerHTML = "Read less";
+                moreText.style.display = "inline";
+            }
+        }
+   </script>
+   <!--------x--------Read More Btn-----x------>
+   
+   
+   <!-----------------Flickity------------>   
+   <script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js"></script>
+   
+   <script src="https://unpkg.com/flickity-fullscreen@1/fullscreen.js"></script>
+   
+   <script>
+        var carousel = document.querySelector('.carousel');
+        var flkty = new Flickity( carousel, {
+          imagesLoaded: true,
+          percentPosition: false,
+          autoPlay: 2000,
+          wrapAround: true,
+          fullscreen: true,
+          accessibility: true
+        });
+
+        var imgs = carousel.querySelectorAll('.carousel-cell img');
+        // get transform property
+        var docStyle = document.documentElement.style;
+        var transformProp = typeof docStyle.transform == 'string' ?
+          'transform' : 'WebkitTransform';
+
+        flkty.on( 'scroll', function() {
+          flkty.slides.forEach( function( slide, i ) {
+            var img = imgs[i];
+            var x = ( slide.target + flkty.x ) * -1/3;
+            img.style[ transformProp ] = 'translateX(' + x  + 'px)';
+          });
+        });
+   </script>
+   <!--------x--------Flickity-----x------>
+     
+   
    <!-----------------Accordian------------>
    <script>
         let myLabels = document.querySelectorAll('.lbl-toggle');
@@ -369,18 +509,35 @@
            });
        });
    </script>
+   
+   <script>
+        var acc = document.getElementsByClassName("accordian");
+       var i;
+       for (i = 0; i < acc.length; i++) { 
+               acc[i].addEventListener("click", function() {
+                   this.classList.toggle("active");
+                   
+                   var panel = this.nextElementSibling;
+                   
+                   if (panel.style.maxHeight) {
+                       panel.style.maxHeight = null;
+                   }
+                   else {
+                       panel.style.maxHeight = panel.scrollHeight + "px";
+                   }
+               });
+           }
+   </script>
    <!--------x--------Accordian-----x------>
    
    
     <!-----------------SmoothScoll------------>
-
     <script>
 	var scroll = new SmoothScroll('a[href*="#"]', {
         speed: 1500,
         speedAsDuration: true
     });
     </script>
-    
     <!--------x--------SmoothScoll-----x------>
     
     </body>
