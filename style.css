@@ -283,7 +283,7 @@ input[type='checkbox']{
     text-align: justify;
     padding: 1rem;
     color: whitesmoke;
-    background: #777;
+    background: #f67c92;
     cursor: pointer;
     border-radius: 7px;
     transition: all 0.25s ease-out;
