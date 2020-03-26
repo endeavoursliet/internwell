@@ -28,6 +28,10 @@
     margin-top: 50px;
 }
 
+.header-text p{
+    text-align: justify;
+}
+
 h1{
     font-size: 34px;
 }
@@ -144,6 +148,7 @@ nav ul li a{
     max-width: 500px;
     margin-right: 100px;
     display: inline-block;
+    text-align: justify;
 }
 
 .about-text h2{
