@@ -25,7 +25,7 @@
 
 .header-text{
     max-width: 350px;
-    margin-top: 40px;
+    margin-top: 50px;
 }
 
 h1{
@@ -48,6 +48,7 @@ h1{
     font-weight: bolder;
     cursor: pointer;
     border-radius: 40px;
+    border: 2px solid black;
 }
 
 .common-btn:hover{
@@ -59,11 +60,6 @@ p{
     font-size: 15px;
     line-height: 18px;
     color: #777;
-}
-
-.header-text button{
-    margin-top: 20px;
-    margin-bottom: 40px;
 }
 
 .line-1{
@@ -184,6 +180,14 @@ nav ul li a{
 .feature-col{
     flex-basis: 25%;
     text-align: center;
+    transition: all 0.3s ease;
+    border-radius: 10px;
+    padding: 20px 10px;
+    padding-bottom: 30px;
+}
+
+.feature-col:hover{
+    box-shadow: 10px 10px 15px #777;
 }
 
 .feature-col img{
@@ -255,6 +259,84 @@ nav ul li a{
 /*----------x-------Offers_Section------------x----------*/
 
 
+/*------------------qna_Section----------------------*/
+
+
+.wrap-collapsible{
+    margin: 0.5rem 0;
+}
+
+input[type='checkbox']{
+    display: none;
+}
+
+.lbl-toggle{
+    display: block;
+    font-weight: bold;
+    font-size: 1.2rem;
+    font-family: monospace;
+    text-align: justify;
+    padding: 1rem;
+    color: #777;
+    background: #FAE042;
+    cursor: pointer;
+    border-radius: 7px;
+    transition: all 0.25s ease-out;
+}
+
+.lbl-toggle:hover{
+    color: #7C5A0B;
+}
+
+.lbl-toggle::before{
+    content: ' ';
+    display: inline-block;
+    border-top: 5px solid transparent;
+    border-bottom: 5px solid transparent;
+    border-left: 5px solid currentColor;
+    vertical-align: middle;
+    margin-right: 0.7rem;
+    transform: translateY(-2px);
+    transition: transform 0.2s ease-out;
+}
+
+.toggle:checked + .lbl-toggle::before{
+    transform: rotate(90deg) translateX(-3px);
+}
+
+.collapsible-content{
+    max-height: 0px;
+    overflow: hidden;
+    transition: max-height 0.25s ease-in-out;
+    background-color: blanchedalmond;
+    text-align: justify;
+}
+
+.toggle:checked + .lbl-toggle + .collapsible-content{
+    max-height: 100vh;
+}
+
+
+.toggle:checked + .lbl-toggle{
+    border-bottom-right-radius: 0;
+    border-bottom-left-radius: 0;
+}
+    
+.collapsible-content .content-inner{
+    background: rgba(250, 224, 66, 0.2);
+    border-bottom: 1px solid rgba(250, 224, 66, 0.45);
+    border-bottom-left-radius: 7px;
+    border-bottom-right-radius: 7px;
+    padding: 0.5rem 1rem;
+}
+
+.content-inner p{
+    font-family: sans-serif;
+}
+
+/*----------x-------qna_Section------------x----------*/
+
+
 /*------------------Contact_Section----------------------*/
 
 .contact-row{
@@ -295,6 +377,7 @@ form input{
 .btn-box button{
     flex-basis: 48%;
     padding: 18px 0;
+    margin-right: 1.15px;
 }
 
 /*---------x--------Contact_Section-----------x---------*/
@@ -398,9 +481,9 @@ hr{
 
 /*---------x--------MediaQueries_Section-----------x---------*/
 
-@media only screen and (max-width: 770px) {
+@media only screen and (max-width: 767px) {
 #header{
-        background-image: none;
+    background: none;
     }
     
 .container{
@@ -414,7 +497,7 @@ hr{
     }
 
 .header-text{
-    margin-top: 100px;
+    margin-top: 80px;
     }
 
 h1{
@@ -450,7 +533,6 @@ h1{
     
 .feature-col{
     flex-basis: 100%;
-    margin-bottom: 20px;
     }    
 
 .course-left-col{
