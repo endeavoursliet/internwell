@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!--------------------------metatags------------------------------>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <meta name="keywords" content="internwell, internwellsliet, sliet, intern, internsliet, techfest, techfest20, madhuram, longowal, sangrur, delhi, iitbombay, iitdelhi, iit, nit, cfti, cuturalfest, mhrd, govt">
+        <meta name="description" content="Official Website of Internwell">
+        <meta name="author" content="Piyush Raj Anand">
+        <!--------------x-----------metatags-------------x---------------->
+        
+        
+        <!--------------------------Bootstrap4CDN------------------------------> 
+        
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+          <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+          <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+          <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+        
+        <!--------------x-----------Bootstrap4CDN-------------x----------------> 
+        
+        
+        <title>InternWell - "A startup by young enthusiasts"</title>        
+                
+        <!----------------------CustomCss-------------------------->
+        <link rel="stylesheet" type="text/css" href="./style.css">
+        <!-------------x--------CustomCss--------------x----------->
+</head>
+<body>
+    
+    <div class="jumbotron text-center">
+      <h1 class="welcome">Welcome to "Towards Skilldom"</h1>
+      <p class="pi">Registration Portal</p> 
+    </div>
+    
+    <!------------x------------Nav_Section-----------x-------------->
+     <nav id="sideNav">
+         <ul>
+             <li><a href="../index.html" target="_blank">RETURN TO HOMEPAGE</a></li>
+         </ul>
+     </nav>
+     <img src="./images/menu.png" id="menuBtn" alt="menuBtn">
+     
+     <!------------x------------Nav_Section-----------x-------------->
+        <div class="container-fluid">
+         <div>
+             <h1 class="hi">Registration Steps</h1>
+         </div>
+          <div class="row">
+            <div class="col-lg-4">
+              <h3>Action 1</h3>
+              <img src="./images/1.jpg" alt="" class="img-fluid">
+            </div>
+            <div class="col-lg-4">
+              <h3>Action 2</h3>
+              <img src="./images/2.jpg" alt="" class="img-fluid">
+            </div>
+            <div class="col-lg-4">
+              <h3>Action 3</h3>        
+              <img src="./images/3.jpg" alt="" class="img-fluid">
+            </div>
+          </div>
+          
+          <a href="https://bit.ly/skilldom" target="_blank"><button type="button" class="btn btn-primary btn-block">Register</button></a>
+          <a href="https://rzp.io/l/towardsskilldom" target="_blank"><button type="button" class="btn btn-primary btn-block">Payment</button></a>
+        </div>
+        
+        
+      <!------------x------------SocialMedia_Section-----------x-------------->
+     <section class="social-icons">
+        <a href="https://www.facebook.com/internwell" target="_blank"><img src="./images/facebook.png" alt=""></a>
+        <a href="https://www.instagram.com/internwell/" target="_blank"><img src="./images/instagram.png" alt=""></a>
+        <a href="https://www.linkedin.com/mwlite/company/internwell" target="_blank"><img src="./images/linkedin.png" alt=""></a>
+        <a href="https://www.twitter.com/internwell" target="_blank"><img src="./images/twitter.png" alt=""></a>
+     </section>
+     <!------------x------------SocialMedia_Section-----------x-------------->
+     
+     <!-----------------Nav Menu------------>
+    <script>
+        var menuBtn = document.getElementById("menuBtn");
+        var sideNav = document.getElementById("sideNav");
+        
+        sideNav.style.right = "-250px";
+        menuBtn.onclick = function(){
+            if(sideNav.style.right == "-250px") {
+                sideNav.style.right = "0";
+            }
+            else {
+                sideNav.style.right = "-250px";
+            }
+        }
+        
+        
+    </script>
+   <!--------x--------Nav Menu-----x------>
+
+</body>
+</html>
